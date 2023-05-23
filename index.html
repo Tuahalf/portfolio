@@ -2,25 +2,73 @@
 <html>
 <head>
     <title>Aurelien Flahaut</title>
-    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
 </head>
 <body>
-    <div class="barre">
-        <span></span>
-        <div class="barre_menu">
-            <span>Menu</span>
-        </div>  
+<header>
+    <div class="files">
+        <span class="onglet-actif" data-tab="accueil.html">accueil.html</span>
+        <a class="onglet" href="projet.html">joachautrement.html</a>
     </div>
+    <div class="breadcrumb">
+        <span class="breadcrumb-item">Portfolio</span>
+        <span class="breadcrumb-last-item">Accueil.html</span>
+    </div>
+</header>
 
-    <header class="header">
-        <div class="header__hero">
-            <div class="header__hero--heading">
-                <span>Bonjour, </span> <br>
-                <span>je suis</span>
-                <span class="header__hero--heading-gradient">Aurélien,</span><br>
-                <span>étudiant en BTS SIO</span>
-            </div>
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <h3>EXPLORATEUR</h3>
+        <li><img src="img/folder.png" alt="logo folder" class="folder">Projet
+            <ul class="folder-content">
+                <li><img src="img/html.png" alt="logo html"><a href="index.html">accueil.html</a></li>
+                <li><img src="img/html.png" alt="logo html"><a href="projet.html">joachautrement.html</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+    
+    <div class="content">
+        
+        <div class="code">
+            <span class="code-line">{</span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">nom</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<span class="code-value" itemprop="name">Aur&eacute;lien Flahaut</span>",</span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">position</span><span class="code-hidden">"</span>:<span class="code-indent"> </span>"<span class="code-value" itemprop="jobTitle">Etudiant</span>",</span>
+            <span class="code-line"> </span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">email</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<a href="mailto:flahaut.aur@gmail.com" class="code-link" itemprop="email">flahaut.aur@gmail.com</a>",</span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">localisation</span><span class="code-hidden">"</span>: "<span class="code-value">France</span>",</span>
+            <span class="code-line"> </span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">diplome</span><span class="code-hidden">"</span>: {</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>": "<span class="code-value">BAC g&eacute;n&eacute;ral (Science de l'ing&eacute;nieur, Num&eacute;rique et science informatique)</span>",</span>
+            <span class="code-line"><span class="code-space">  </span>},</span>
+            <span class="code-line"> </span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">formation_post_bac</span><span class="code-hidden">"</span>: {</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>-<span class="code-key-alt">2024</span>": "<span class="code-value">BTS SIO option SLAM</span>",</span>
+            <span class="code-line"><span class="code-space">  </span>},</span>
+            <span class="code-line"> </span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">projets</span><span class="code-hidden">"</span>: {</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">1e projet</span>": "<a href="projet.html"  rel="noopener" class="code-link" itemprop="url">joachautrement</a>",</span>
+            <span class="code-line"><span class="code-space">  </span>},</span>
+            <span class="code-line"> </span>
+            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">links</span><span class="code-hidden">"</span>: {</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">linkedin</span>": "<a href="https://www.linkedin.com/in/aur%C3%A9lien-flahaut-8ab750264/" target="_blank" rel="noopener" class="code-link" itemprop="url">linkedin.com/in/aurelien-flahaut/</a>",</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">github</span>": <span class="code-indent"> </span>"<a href="https://github.com/tuahalf/" target="_blank" rel="noopener" class="code-link" itemprop="sameAs">github.com/tuahalf</a>",</span>
+            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">CV</span>": <span class="code-indent"> </span>"<a href="cv.pdf" target="_blank" rel="noopener" class="code-link" itemprop="sameAs">cv.pdf</a>",</span>
+            <span class="code-line"><span class="code-space">  </span>}</span>
+            <span class="code-line">}</span>
         </div>
-    </header>
+    </div>
+    <script >
+        const folders = document.querySelectorAll('.folder');   
+        folders.forEach(folder => {
+            folder.addEventListener('click', () => {
+                const folderContent = folder.nextElementSibling;
+                folderContent.classList.toggle('folder-content-show');
+            });
+        });
+
+    </script>
 </body>
 </html>
