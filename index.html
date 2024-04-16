@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Aurelien Flahaut</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
 </head>
-<body>
-    <header>
-        <div class="files">
-            <span class="onglet-actif" data-tab="accueil.html">accueil.html</span>
-            <a class="onglet" href="projet.html">joachautrement.html</a>
-            <a class="onglet" href="contact.html">contact.html</a>
-        </div>
-        <div class="breadcrumb">
-            <span class="breadcrumb-item">Portfolio</span>
-            <span class="breadcrumb-last-item">Accueil.html</span>
-        </div>
-    </header>
 
-    <div class="sidebar">
-        <ul class="sidebar-menu">
-            <h3>EXPLORATEUR</h3>
-            <li>
-                <img src="img/html.png" alt="logo html">
-                <a href="index.html">accueil.html</a>
-            </li>
-            <li>
-                <img src="img/html.png" alt="logo html">
-                <a href="contact.html">contact.html</a>
-            </li>
-            <li>
-                <div class="folder-wrapper">
-                    <span class="folder">> Projet</span>
-                    <ul class="folder-content">
-                        <li>
-                            <img src="img/html.png" alt="logo html">
-                            <a href="projet.html">joachautrement.html</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-    
-    
+<body style="background-color: #202020;">
+    <div class="row g-0">
+        <div class="sidebar bg-dark text-white col-2" style="height: 100vh;">
+            <h3 class="px-3 pt-3">Explorateur</h3>
+            <ul class="list-group bg-dark px-3">
+                <li class="list-group-item bg-dark">
+                    <img src="img/html.png" alt="logo html" class="mr-2" style="width: 15%;">
+                    <a href="index.html" class="text-white">accueil.html</a>
+                </li>
+                <li class="list-group-item bg-dark">
+                    <img src="img/html.png" alt="logo html" class="mr-2" style="width: 15%;">
+                    <a href="contact.html" class="text-white">contact.html</a>
+                </li>
+                <li class="list-group-item bg-dark">
+                    <div class="folder-wrapper">
+                        <span class="folder mr-2 text-white">&gt; Projet</span>
+                        <ul class="folder-content list-group">
+                            <li class="list-group-item bg-dark">
+                                <img src="img/html.png" alt="logo html" class="mr-2" style="width: 15%;">
+                                <a href="projet.html" class="text-white">joachautrement.html</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <div class="content">
-        <div class="code">
-            <span class="code-line">{</span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">nom</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<span class="code-value" itemprop="name">Aur&eacute;lien Flahaut</span>",</span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">position</span><span class="code-hidden">"</span>:<span class="code-indent"> </span>"<span class="code-value" itemprop="jobTitle">Etudiant</span>",</span>
-            <span class="code-line"> </span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">email</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<a href="mailto:flahaut.aur@gmail.com" class="code-link" itemprop="email">flahaut.aur@gmail.com</a>",</span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">localisation</span><span class="code-hidden">"</span>: "<span class="code-value">France</span>",</span>
-            <span class="code-line"> </span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">diplome</span><span class="code-hidden">"</span>: {</span>
-            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>": "<span class="code-value">BAC g&eacute;n&eacute;ral (Science de l'ing&eacute;nieur, Num&eacute;rique et science informatique)</span>",</span>
-            <span class="code-line"><span class="code-space">  </span>},</span>
-            <span class="code-line"> </span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">formation_post_bac</span><span class="code-hidden">"</span>: {</span>
-            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>-<span class="code-key-alt">2024</span>": "<span class="code-value">BTS SIO option SLAM</span>",</span>
-            <span class="code-line"><span class="code-space">  </span>},</span>
-            <span class="code-line"> </span>
-            <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">projets</span><span class="code-hidden">"</span>: {</span>
-            <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">joachautrement</span>": "<a href="projet.html"  rel="noopener" class="code-link" itemprop="url">joachautrement.html</a>",</span>
-            <span class="code-line"><span class="code-space">  </span>},</span>
-            <span class="code-line">}</span>
+
+
+
+        <div class="content col-10">
+            <div class="files">
+                <span class="onglet-actif" data-tab="accueil.html">accueil.html</span>
+                <a class="onglet" href="projet.html">joachautrement.html</a>
+                <a class="onglet" href="contact.html">contact.html</a>
+            </div>
+            <div class="breadcrumb">
+                <span class="breadcrumb-item">Portfolio</span>
+                <span class="breadcrumb-last-item">Accueil.html</span>
+            </div>
+            <div class="code text-left">
+                <span class="code-line">{</span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">nom</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<span class="code-value" itemprop="name">Aur&eacute;lien Flahaut</span>",</span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">position</span><span class="code-hidden">"</span>:<span class="code-indent"> </span>"<span class="code-value" itemprop="jobTitle">Etudiant</span>",</span>
+                <span class="code-line"> </span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">email</span><span class="code-hidden">"</span>: <span class="code-indent"></span>"<a href="mailto:flahaut.aur@gmail.com" class="code-link" itemprop="email">flahaut.aur@gmail.com</a>",</span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">localisation</span><span class="code-hidden">"</span>: "<span class="code-value">France</span>",</span>
+                <span class="code-line"> </span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">diplome</span><span class="code-hidden">"</span>: {</span>
+                <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>": "<span class="code-value">BAC g&eacute;n&eacute;ral (Science de l'ing&eacute;nieur, Num&eacute;rique et science informatique)</span>",</span>
+                <span class="code-line"><span class="code-space">  </span>},</span>
+                <span class="code-line"> </span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">formation_post_bac</span><span class="code-hidden">"</span>: {</span>
+                <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">2022</span>-<span class="code-key-alt">2024</span>": "<span class="code-value">BTS SIO option SLAM</span>",</span>
+                <span class="code-line"><span class="code-space">  </span>},</span>
+                <span class="code-line"> </span>
+                <span class="code-line"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">projets</span><span class="code-hidden">"</span>: {</span>
+                <span class="code-line"><span class="code-space">    </span>"<span class="code-key-alt">joachautrement</span>": "<a href="projet.html"  rel="noopener" class="code-link" itemprop="url">joachautrement.html</a>",</span>
+                <span class="code-line"><span class="code-space">  </span>},</span>
+                <span class="code-line">}</span>
+            </div>
+            
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const folders = document.querySelectorAll('.folder');
+
+            folders.forEach(folder => {
+                const folderContent = folder.nextElementSibling;
+                const folderName = folder.textContent.trim();
+
+                const isOpen = localStorage.getItem(folderName) === 'true';
+
+                if (isOpen) {
+                    folderContent.classList.add('folder-content-show');
+                }
+
+                folder.addEventListener('click', () => {
+                    folderContent.classList.toggle('folder-content-show');
+
+                    const isOpen = folderContent.classList.contains('folder-content-show');
+                    localStorage.setItem(folderName, isOpen ? 'true' : 'false');
+                });
+            });
+        });
+
+    </script>
 </body>
+
 </html>
