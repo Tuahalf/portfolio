@@ -11,7 +11,7 @@
 .onglet1 {
   padding: 7px 20px;
   color: white;
-  background-color: #353535;
+  background-color: #191919;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -20,7 +20,7 @@
 .onglet {
   padding: 7px 20px;
   color: white;
-  background-color: #353535;
+  background-color: #191919;
   text-decoration: none;
   position: relative;
   display: none;
@@ -30,7 +30,7 @@
 .onglet-actif {
   padding: 7px 20px;
   color: white;
-  background-color: #191919;
+  background-color: dark;
   text-decoration: none;
   position: relative;
   display: inline-block;
