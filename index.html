@@ -14,20 +14,28 @@
       <span class="window__title"><small>index.html - Portfolio</small></span>
 
       <div class="icons">
-        <svg height="15" viewBox="0 0 21 21" width="15" xmlns="http://www.w3.org/2000/svg">
-          <path d="m5.5 10.5h10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+        <button>
+          <svg height="15" viewBox="0 0 21 21" width="15" xmlns="http://www.w3.org/2000/svg">
+            <path d="m5.5 10.5h10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button> 
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-        </svg>
-        <svg height="15" viewBox="0 0 21 21" width="15" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-            transform="translate(5 5)">
-            <path d="m10.5 10.5-10-10z" />
-            <path d="m10.5.5-10 10" />
-          </g>
-        </svg>
+        </button> 
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h21M3 12h18M3 3h21"/>
+          </svg>
+        </button>
+        <button id="fermerPage">
+          <svg height="15" viewBox="0 0 21 21" width="15" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              transform="translate(5 5)">
+              <path d="m10.5 10.5-10-10z" />
+              <path d="m10.5.5-10 10" />
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="content">
@@ -111,10 +119,12 @@
               <p>Liens :</p>
               <ul>
                 <li>
-                  <a class="no-indent" target="_blank" rel="noopener noreferrer" href="joachautrement.ovh">joachautrement.ovh</a>
+                  <a class="no-indent" target="_blank" rel="noopener noreferrer"
+                    href="joachautrement.ovh">joachautrement.ovh</a>
                 </li>
                 <li>
-                  <a class="no-indent" target="_blank" rel="noopener noreferrer" href="https://github.com/Frize01/joachautrement">github</a>
+                  <a class="no-indent" target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/Frize01/joachautrement">github</a>
                 </li>
               </ul>
             </li>
@@ -177,11 +187,11 @@
               <legend class="visually-hidden">Themes</legend>
               <div class="theme-switcher__themes">
                 <label for="dracula">
-                  <input type="radio" name="theme" value="dracula" id="dracula" checked/>
+                  <input type="radio" name="theme" value="dracula" id="dracula" checked />
                   Dracula
                 </label>
                 <label for="shades-of-purple">
-                  <input type="radio" name="theme" value="shades-of-purple" id="shades-of-purple"/>
+                  <input type="radio" name="theme" value="shades-of-purple" id="shades-of-purple" />
                   Shades of purple
                 </label>
                 <label for="rose-pine-moon">
