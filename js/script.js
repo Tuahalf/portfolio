@@ -113,3 +113,7 @@ const handleThemeInput = (e) => {
 };
 
 document.addEventListener("DOMContentLoaded", init);
+
+document.getElementById("fermerPage").addEventListener("click", function() {
+  window.close();
+});
