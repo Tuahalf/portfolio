@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Aurelien Flahaut</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body style="background-color: #202020;">
@@ -23,12 +23,19 @@
                 </li>
                 <li class="list-group-item bg-dark">
                     <div class="folder-wrapper">
-                        
-                        <span class="folder mr-2 text-white"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#ffffff"></path> </g></svg> Projet</span>
-                        <ul class="folder-content list-group">
+                        <span id="toggleProject" class="folder mr-2 text-white" role="button">
+                            <svg width="25px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#ffffff"/>
+                            </svg> Projet
+                        </span>
+                        <ul id="projectList" class="folder-content list-group" style="display: none;">
                             <li class="list-group-item bg-dark">
                                 <img src="img/html.png" alt="logo html" class="mr-2" style="width: 15%;">
-                                <a href="projet.html" class="text-white">joachautrement.html</a>
+                                <a href="joachautrement.html" class="text-white">joachautrement.html</a>
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <img src="img/html.png" alt="logo html" class="mr-2" style="width: 15%;">
+                                <a href="maaf.html" class="text-white">maaf.html</a>
                             </li>
                         </ul>
                     </div>
@@ -63,13 +70,14 @@
                 <span class="code-line text-white"><span class="code-space">  </span>},</span>
                 <span class="code-line text-white"> </span>
                 <span class="code-line text-white"><span class="code-space">  </span><span class="code-hidden">"</span><span class="code-key">projets</span><span class="code-hidden">"</span>: {</span>
-                <span class="code-line text-white"><span class="code-space">    </span>"<span class="code-key-alt">joachautrement</span>": "<a href="projet.html"  rel="noopener" class="code-link" itemprop="url">joachautrement.html</a>",</span>
+                <span class="code-line text-white"><span class="code-space">    </span>"<span class="code-key-alt">joachautrement</span>": "<a href="joachautrement.html"  rel="noopener" class="code-link" itemprop="url">joachautrement.html</a>",</span>
+                <span class="code-line text-white"><span class="code-space">    </span>"<span class="code-key-alt">maaf</span>": "<a href="projet.html"  rel="noopener" class="code-link" itemprop="url">maaf.html</a>",</span>
                 <span class="code-line text-white"><span class="code-space">  </span>},</span>
                 <span class="code-line text-white">}</span>
             </div>
             
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -1,24 +1,10 @@
-
-
-
-const folders = document.querySelectorAll('.folder');
-
-folders.forEach(folder => {
-  const folderContent = folder.nextElementSibling;
-  const folderName = folder.textContent.trim();
-
-  const isOpen = localStorage.getItem(folderName) === 'true';
-
-  if (isOpen) {
-    folderContent.classList.add('folder-content-show');
+document.getElementById('toggleProject').addEventListener('click', function() {
+  var projectList = document.getElementById('projectList');
+  if (projectList.style.display === 'none') {
+      projectList.style.display = 'block';
+  } else {
+      projectList.style.display = 'none';
   }
-
-  folder.addEventListener('click', () => {
-    folderContent.classList.toggle('folder-content-show');
-
-    const isOpen = folderContent.classList.contains('folder-content-show');
-    localStorage.setItem(folderName, isOpen ? 'true' : 'false');
-  });
 });
 
 

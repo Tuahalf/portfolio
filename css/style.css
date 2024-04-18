@@ -1,17 +1,7 @@
-
-
-
-.file { 
-  margin-top: 0;
-  padding-top:12px ; 
-  padding-bottom:7px;
-  display: felx;
-}
-
 .onglet1 {
   padding: 7px 20px;
   color: white;
-  background-color: #191919;
+  background-color: #353535;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -20,7 +10,7 @@
 .onglet {
   padding: 7px 20px;
   color: white;
-  background-color: #191919;
+  background-color: #353535;
   text-decoration: none;
   position: relative;
   display: none;
@@ -30,7 +20,7 @@
 .onglet-actif {
   padding: 7px 20px;
   color: white;
-  background-color: dark;
+  background-color: #191919;
   text-decoration: none;
   position: relative;
   display: inline-block;
